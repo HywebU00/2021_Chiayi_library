@@ -184,6 +184,27 @@ footer {
 //新增修改
 footer {
     background: url(../images/img/Background_img.png);
+    .footer_logo{
+        background: url(../images/img/footer_logo.png) center no-repeat;
+        width: 262px;
+        height: 162px;
+
+        @media screen and(max-width: 950px) {
+            width: 200px;
+            margin-right: 2em;
+        }
+        @media screen and(max-width: 840px) {
+            background: url(../images/logo.png) center no-repeat;
+            width: 343px;
+            height: 80px;
+            margin-bottom: 1em;
+        }
+         @include screen('xs_mobile') {
+            margin-top:1em;
+            // margin-bottom: 0em;
+    }
+    }
+   
     .container {
         &:nth-child(2) {
             background: $secondaryColor;

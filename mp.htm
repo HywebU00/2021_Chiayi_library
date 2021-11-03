@@ -13,6 +13,8 @@
     <!-- slick css-->
     <link rel="stylesheet" type="text/css" href="vendor/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="vendor/slick/slick-theme.css" />
+    <!-- wow css -->
+    <link rel="stylesheet" type="text/css" href="vendor/animate.css" />
     <!--pignose-->
     <link rel="stylesheet" href="vendor/pg_calendar/css/pignose.calendar.min.css">
     <!-- hyUI css -->
@@ -47,44 +49,10 @@
                         <button class="reader_btn-1">
                             <p>讀者登入</p>
                         </button>
-                        <!--未登入狀態區塊-->
-                        <!-- <div class="nav_readerArea-1" style="display: none;">
-                            <button type="button" class="close">關閉</button>
-                            <div class="form_grp">
-                                <label for="username">帳號：</label>
-                                <input name="username" type="text" placeholder="請輸入帳號">
-                            </div>
-                            <div class="form_grp">
-                                <label for="password">密碼：</label>
-                                <input name="password" type="password" placeholder="請輸入密碼">
-                            </div>
-                            <div class="check_grp">
-                                <label><input type="checkbox">記住帳號</label>
-                            </div>
-                            <div class="btn_grp">
-                                <button type="button" class="loginout">登入</button>
-                            </div>
-                        </div> -->
                         <!-- 已登入狀態顯示讀者姓名 -->
-                        <button class="reader_btn-2" style="display: none;">張家祥</button>
-                        <!--讀者已登入狀態區塊-->
-                        <div class="nav_readerArea-2" style="display:none">
-                            <button type="button" class="close">關閉</button>
-                            <div class="reader_infolist">
-                                <p>歡迎，<span class="reader_name">張家祥</span></p>
-                                <ul>
-                                    <li>借閱中<span>10</span></li>
-                                    <li class="important">逾期未歸<span>1</span></li>
-                                    <li class="important">違規天數<span>1</span></li>
-                                    <li>預約<span>5</span></li>
-                                    <li class="important">已到館<span>2</span></li>
-                                </ul>
-                            </div>
-                            <div class="btn_grp">
-                                <button class="my_study">個人書房</button>
-                                <button class="loginout">登出</button>
-                            </div>
-                        </div>
+                        <button class="reader_btn-2" style="display:none;">
+                            <p>張家祥</p>
+                        </button>
                     </div>
                 </nav>
                 <!--未登入狀態區塊-->
@@ -103,6 +71,24 @@
                     </div>
                     <div class="btn_grp">
                         <button type="button" class="loginout">登入</button>
+                    </div>
+                </div>
+                <!--讀者已登入狀態區塊-->
+                <div class="nav_readerArea-2" style="display:none;">
+                    <button type="button" class="close">關閉</button>
+                    <div class="reader_infolist">
+                        <p>歡迎，<span class="reader_name">張家祥</span></p>
+                        <ul>
+                            <li>借閱中<span>10</span></li>
+                            <li class="important">逾期未歸<span>1</span></li>
+                            <li class="important">違規天數<span>1</span></li>
+                            <li>預約<span>5</span></li>
+                            <li class="important">已到館<span>2</span></li>
+                        </ul>
+                    </div>
+                    <div class="btn_grp">
+                        <button class="my_study">個人書房</button>
+                        <button class="loginout">登出</button>
                     </div>
                 </div>
                 <!-- navigation End -->
@@ -249,13 +235,15 @@
                     </div>
                 </div>
             </section>
-            <div class="news_bg">
+            <div class="news_bg" >
                 <section class="flex-8-4">
+                    <div class="book_animate_l  wow fadeInLeft"></div>
+                    <div class="book_animate_r wow fadeInRight"></div>
                     <div class="container">
-                        <div class="Flex-set">
+                        <div class="Flex-set" >
                             <!-- 最新消息 -->
-                            <div class="col latest_news">
-                                <h2>訊息專區</h2>
+                            <div class="col latest_news wow fadeIn" data-wow-delay=".5s">
+                                <h2 class="text-left">訊息專區</h2>
                                 <!-- 地方圖書館 選擇館別 -->
                                 <div class="form_grp form_inline select_library">
                                     <label for="selectSample">選擇館別：</label>
@@ -352,8 +340,8 @@
                                     </section>
                                 </div>
                             </div>
-                            <div class="col reader_service">
-                                <h2>讀者服務</h2>
+                            <div class="col reader_service wow fadeIn" data-wow-delay=".8s">
+                                <h2 class="text-left">讀者服務</h2>
                                 <div class="service_list">
                                     <ul>
                                         <li>
@@ -410,9 +398,9 @@
                         </div>
                     </div>
                 </section>
-                <section class="flex-5-7 activity_section">
+                <section class="flex-5-7 activity_section wow fadeInUp" data-wow-delay=".3s">
                     <div class="container">
-                        <h2>近期活動</h2>
+                        <h2 class="text-left">近期活動</h2>
                         <!-- 地方圖書館 選擇館別 -->
                         <div class="form_grp form_inline select_library">
                             <label for="selectSample">選擇館別：</label>
@@ -436,7 +424,8 @@
                                                         <span class="name">嘉義縣圖書館</span>
                                                         <time class="time">2021/04/18</time>
                                                     </span>
-                                                    <span class="caption_name">110年度生活講座110年度生活講座110年度生活講座110年度生活講座</span>
+                                                    <span
+                                                        class="caption_name">110年度生活講座110年度生活講座110年度生活講座110年度生活講座</span>
                                                 </span>
                                             </div>
                                         </a>
@@ -450,7 +439,8 @@
                                                         <span class="name">嘉義縣圖書館</span>
                                                         <time class="time">2021/04/18</time>
                                                     </span>
-                                                    <span class="caption_name">110年度生活講座110年度生活講座110年度生活講座110年度生活講座</span>
+                                                    <span
+                                                        class="caption_name">110年度生活講座110年度生活講座110年度生活講座110年度生活講座</span>
                                                 </span>
                                             </div>
                                         </a>
@@ -485,7 +475,7 @@
                 <div class="container newbook_container">
                     <h2>新書展示</h2>
                     <div class="">
-                        <div class="bookSlider newBook">
+                        <div class="bookSlider newBook  wow fadeInUp" ">
                             <div class="book_wrap">
                                 <a href="#">
                                     <div class="img-container">
@@ -561,7 +551,7 @@
                             <a href="#" class="tabItem active">借閱</a>
                             <!--選到的頁籤項目-->
                             <div class="tabContent">
-                                <div class="bookSlider">
+                                <div class="bookSlider wow fadeInUp"  data-wow-delay=".3s">
                                     <div class="book_wrap">
                                         <a href="#">
                                             <div class="img-container">
@@ -797,8 +787,8 @@
             </section>
 
             <section class="category_search">
-                <div class="container">
-                    <h2>個館資訊</h2>
+                <div class="container wow fadeIn"  data-wow-delay=".5s">
+                    <h2>各館資訊</h2>
                     <div class="btn_grp">
                         <a class="btn">新港鄉立圖書館</a>
                         <a class="btn">新港鄉立圖書館</a>
@@ -833,7 +823,7 @@
                 <div class="container">
                     <div class="Flex-set">
                         <!-- 圖書館資訊 -->
-                        <div class="col library_info">
+                        <div class="col library_info  wow fadeInLeft">
                             <ul>
                                 <li>
                                     <h2>嘉義縣圖書館</h2>
@@ -867,7 +857,7 @@
                             </ul>
                         </div>
                         <!-- 行事曆區塊 -->
-                        <div class="col calendarBlock">
+                        <div class="col calendarBlock  wow fadeInRight">
                             <div class="calendar">
                             </div>
                             <div class="remark">
@@ -1003,8 +993,7 @@
                     </div>
                 </section>
                 <div class="footer_info">
-                    <div class="">
-                        <img src="images/img/footer_logo.png" alt="">
+                    <div class="footer_logo">
                     </div>
                     <p class="Copyright">
                         <b>嘉義縣圖書館</b><br>
@@ -1044,10 +1033,13 @@
     <script src="vendor/scrolltable/jquery.scroltable.min.js"></script><!-- scrolltable -->
     <!-- pg_calendar -->
     <script src="vendor/pg_calendar/js/pignose.calendar.full.js"></script>
+        <!-- WOW -->
+        <script src="vendor/wow/wow.min.js"></script>
     <!-- hyUI -->
     <script src="js/hyui.js"></script>
     <!-- 客製js -->
     <script src="js/customize.js"></script>
+
     <script>
         $(function () {
             $('.calendar').pignoseCalendar({

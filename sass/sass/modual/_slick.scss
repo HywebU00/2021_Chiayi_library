@@ -793,7 +793,18 @@
     &:hover,&:focus{
         background: url(../../images/img/icon_prve_g.svg) center center no-repeat;
         background-size: 30px 30px; 
+       
     }
+   
+}
+
+.mpSlider{
+    .slick-prev, .slick-next{
+        @include screen('mobile') {
+            display: none !important;
+        }
+    }
+  
 }
 
 .slick-next {
@@ -803,6 +814,7 @@
     &:hover,&:focus{
         background: url(../../images/img/icon_next_g.svg) center center no-repeat;
         background-size: 30px 30px; 
+        
     }
 }
 
@@ -824,6 +836,7 @@
     &:hover,&:focus{
         background: url(../../images/img/icon_prve_g.svg) center center no-repeat;
         background-size: 30px 30px; 
+        
     }
 }
 
@@ -833,6 +846,7 @@
     &:hover,&:focus{
         background: url(../../images/img/icon_next_g.svg) center center no-repeat;
         background-size: 30px 30px; 
+       
     }
 }
 
