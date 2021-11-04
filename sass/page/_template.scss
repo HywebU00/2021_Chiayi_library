@@ -1024,9 +1024,9 @@ body {
 
 //行事曆區塊
 .calendarBlock {
-    display: flex;
-    flex-wrap: wrap;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, .3);
+    // display: flex;
+    // flex-wrap: wrap;
+    // box-shadow: 0 2px 8px rgba(0, 0, 0, .3);
 
     .calendar{
         width: 100%;
@@ -1120,8 +1120,10 @@ body {
             position: relative;
             z-index: 40;
             color: #555;
-            width: 2.5em;
-            height: 2.5em;
+            // width: 2.5em;
+            // height: 2.5em;
+            width: 2em;
+            height: 2em;
             // border-radius: 10px;
             border-radius: 50%;
             display: flex;
@@ -1258,7 +1260,7 @@ body {
 // 月曆樣式調整
 
 .calendarBlock{
-    border-radius: 5px;
+    border-radius: 0 0 5px 5px;
     .pignose-calendar-top-date{
         background: #fff;
        
@@ -1301,7 +1303,7 @@ letter-spacing: 0.1em;
         color: #9C9C9C;
     }
     .pignose-calendar-unit{
-        height: 3em;
+        height: 2em;
         
     }
     .pignose-calendar-unit.pignose-calendar-unit-disabled a{
@@ -1312,7 +1314,36 @@ letter-spacing: 0.1em;
     }
 }
 
+.main_image_bg{
+    .img-container{
+        max-height: 220px;
+    }
+    
+}
 
 body{
     overflow-x: hidden;
+}
+.innerpage .main_image_bg .img-container {
+    height: 220px;
+    position: relative;
+    z-index: 50;
+}
+
+.innerpage .main_image_bg .img-container {
+    height: 220px;
+    position: relative;
+    background: url(../images/top_bg.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.apply_form{
+    h3{
+        margin-top: 0em;
+        font-weight: 500;
+    }
+}
+.cp h3{
+    margin-top: 0em;
+    font-weight: 500;
 }

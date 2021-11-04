@@ -413,3 +413,31 @@
         left: 0px;
     }
 }
+
+
+//專案修改
+.menu>ul>li>a{
+    font-weight: 400;
+}
+
+.sidebar{
+    .navlist{
+        ul{
+            padding-left: 1em;
+        }
+        li{
+            list-style-type: none;
+            padding: 0.5em 0;
+            cursor: pointer !important;
+        }
+        a{
+            color: #fff;
+            padding-bottom: 0.5em;
+            
+            &:hover{
+                border-bottom:1px solid ;
+                color: lighten($primaryColor, 40%);
+            }
+        }
+    }
+}

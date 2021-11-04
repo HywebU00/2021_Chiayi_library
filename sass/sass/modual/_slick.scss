@@ -779,6 +779,10 @@
 //===============
 //  slick 樣式設定
 //===============
+.slick-dots li{
+    width: 11px;
+    height: 11px;
+}
 .slick-prev,
 .slick-next {
     top: calc(100% - 60px);

@@ -104,6 +104,7 @@ h2.title {
             position: relative;
             padding: 0 0 0 2em;
             margin-bottom: .5em;
+
             &:before {
                 content: "";
                 position: absolute;
@@ -459,8 +460,9 @@ h2.title {
     list-style: none;
     margin: 0 0 .7em 0;
     border-left: solid 5px $primaryColor;
-    padding: 0.8em 1.5em 0.8em;
-    background: #F2F2F2;
+    padding: 0.3em 0.8em 1.5em 0.8em;
+    // background: #F2F2F2;
+    background: lighten($primaryColor, 45%);
     display: flex;
     flex-wrap: wrap;
     @extend %clearfix;
@@ -522,4 +524,29 @@ h2.title {
             text-overflow: ellipsis;
         }
     }
+}
+
+//專案新增
+
+.cp ul.publish_info {
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.cp {
+    .registration {
+        .btn {
+            border-radius: 4px;
+        }
+    }
+}
+
+h2.title {
+    font-size: 1.5em;
+    font-weight: 400;
+    display: inline-block;
+    letter-spacing: 0.05em;
+    padding-bottom: 0.2em;
+    border-bottom: 3px solid #5A9B74;
+    margin:0.8em 0;
 }

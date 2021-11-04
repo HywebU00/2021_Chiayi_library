@@ -17,7 +17,7 @@
      }
      .accesskeyDefine {
          padding: 1em 2em;
-         background: #EEE;
+         background: lighten($primaryColor,45%);//#EEE;
          border-radius: 6px;
          li {
              margin-bottom: .2em;

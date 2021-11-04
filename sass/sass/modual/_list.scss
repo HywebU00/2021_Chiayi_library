@@ -37,7 +37,8 @@
                 display: flex;
                 flex-wrap: wrap;
                 padding: 1em 0;
-                border-bottom: 1px solid #DDD;
+                // border-bottom: 1px solid #DDD;
+                border-bottom: 1px solid lighten($primaryColor, 30%)  ;
                 position: relative; // outline: 1px solid blue;
 
                 .tag {
@@ -80,7 +81,8 @@
 
                 time {
                     display: block;
-                    color: #AAA;
+                    // color: #AAA;
+                    color:darken(#AAA, 20%);
                     font-size: .938em;
                 }
             }
@@ -133,7 +135,8 @@
                 overflow: hidden;
                 max-height: 3.125em;
                 color: $color-word;
-                font-weight: bold;
+                // font-weight: bold;
+                font-weight: 500;
 
                 @include screen("mobile") {
                     display: block;
@@ -448,3 +451,6 @@
         }
     }
 }
+
+//新增專案
+

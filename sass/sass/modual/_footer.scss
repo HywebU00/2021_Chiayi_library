@@ -202,7 +202,7 @@ footer {
          @include screen('xs_mobile') {
             margin-top:1em;
             // margin-bottom: 0em;
-    }
+        }
     }
    
     .container {
@@ -256,6 +256,15 @@ footer {
         .copyright{
             padding:0;
         }
-
+        @include screen('mobile') {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            .footer_link{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+        }
     }
 }

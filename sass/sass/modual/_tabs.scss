@@ -173,8 +173,9 @@
             .township_tag{
                 font-weight: 500;
             }
-            padding: 0 0.5em 0.9em;
-            line-height: 1.6;
+            // padding: 0 0.5em 0.9em;
+            // line-height: 1.6em;
+            line-height: 1em;
             overflow: hidden;
             white-space: nowrap;
             text-overflow: ellipsis;
@@ -238,5 +239,6 @@
     }
     .tabContent{
         top:80px !important;
+        
     }
 }

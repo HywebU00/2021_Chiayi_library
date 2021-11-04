@@ -3,14 +3,18 @@
     padding: .1em 0em .1em;
     font-size: .813em;
     margin: 0px auto 5px;
+
     ul {
         @include li-reset;
+
         li {
             display: inline-block;
             margin: 0px .1em .1em 0px;
+
             &:before {
                 @extend %slash;
             }
+
             &:first-child:before {
                 content: "";
                 display: inline-block;
@@ -20,7 +24,14 @@
             }
         }
     }
+
     a {
         @include aSetting_nocolor;
     }
+}
+
+
+//專案新增
+.breadcrumb {
+    border-bottom: 1px solid #ccc;
 }
