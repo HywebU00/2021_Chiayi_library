@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" class="no-js">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>嘉義縣圖書館 branch</title>
+  <!--HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries [if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+        <script src="js/respond.min.js"></script>
+    <![endif]-->
+  <!-- slick css-->
+  <link rel="stylesheet" type="text/css" href="vendor/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="vendor/slick/slick-theme.css" />
+  <!-- hyUI css -->
+  <link rel="stylesheet" href="css/hyui.css" />
+  <!-- favicon -->
+  <link href="images/favicon.png" rel="icon" type="image/x-icon" />
+</head>
+
+<body>
+  <!-- 直接跳主內容區 -->
+  <a class="goCenter" href="#center" tabindex="1">按Enter到主內容區</a>
+  <!-- wrapper Start -->
+  <div class="wrapper">
+    <!-- header Start -->
+    <header class="header">
+      <div class="container">
+        <a class="accesskey" href="#aU" id="aU" accesskey="U" title="網站標題" tabindex="2">:::</a>
+        <!-- navigation Start -->
+        <nav class="navigation" role="navigation" aria-label="Site">
+          <!-- 新增div navlist -->
+          <div class="navlist">
+            <ul>
+              <li><a href="#">網站導覽</a></li>
+              <li><a href="#">文化觀光局首頁</a></li>
+              <li><a href="#">兒童版</a></li>
+              <li><a href="#">常見問題</a></li>
+            </ul>
+          </div>
+          <!-- 讀者專區 樣式一 -->
+          <!-- 未登入狀態的登入btn -->
+          <div class="nav_reader">
+            <button class="reader_btn-1">
+              <p>讀者登入</p>
+            </button>
+            <!-- 已登入狀態顯示讀者姓名 -->
+            <button class="reader_btn-2" style="display: none">
+              <p>張家祥</p>
+            </button>
+          </div>
+        </nav>
+        <!--未登入狀態區塊-->
+        <div class="nav_readerArea-1" style="display: none">
+          <button type="button" class="close">關閉</button>
+          <div class="form_grp">
+            <label for="username">帳號：</label>
+            <input name="username" type="text" placeholder="請輸入帳號" />
+          </div>
+          <div class="form_grp">
+            <label for="password">密碼：</label>
+            <input name="password" type="password" placeholder="請輸入密碼" />
+          </div>
+          <div class="check_grp">
+            <label><input type="checkbox" />記住帳號</label>
+          </div>
+          <div class="btn_grp">
+            <button type="button" class="loginout">登入</button>
+          </div>
+        </div>
+        <!--讀者已登入狀態區塊-->
+        <div class="nav_readerArea-2" style="display: none">
+          <button type="button" class="close">關閉</button>
+          <div class="reader_infolist">
+            <p>歡迎，<span class="reader_name">張家祥</span></p>
+            <ul>
+              <li>借閱中<span>10</span></li>
+              <li class="important">逾期未歸<span>1</span></li>
+              <li class="important">違規天數<span>1</span></li>
+              <li>預約<span>5</span></li>
+              <li class="important">已到館<span>2</span></li>
+            </ul>
+          </div>
+          <div class="btn_grp">
+            <button class="my_study">個人書房</button>
+            <button class="loginout">登出</button>
+          </div>
+        </div>
+        <!-- navigation End -->
+        <h1>
+          <a href="index.htm"><img src="images/logo.png" alt="網站標題" /></a>
+        </h1>
+        <!-- Search Start -->
+        <!-- 館藏查詢 樣式一 -->
+        <div class="search" role="search">
+          <div class="form_grp">
+            <label for="mustSameAsId">搜尋</label>
+            <input name="username" id="mustSameAsId" type="text" placeholder="請輸入文字" accesskey="S" title="請輸入文字"
+              aria-label="搜尋網站內容" />
+            <button type="button" class="btn btn-search">查詢</button>
+          </div>
+        </div>
+        <!-- Search End -->
+        <!-- noscript -->
+        <noscript>
+          您的瀏覽器不支援JavaScript語法，JavaScript語法並不影響內容的陳述。您可使用按鍵盤上的Ctrl鍵+
+          (+)鍵放大/(-)鍵縮小來改變字型大小；回到上一頁可使用瀏覽器提供的
+          Alt+左方向鍵(←)
+          快速鍵功能；列印可使用瀏覽器提供的(Ctrl+P)功能。您的瀏覽器，不支援script語法，若您的瀏覽器無法支援請點選此超連結
+          <a href="#">網站導覽</a>
+        </noscript>
+        <!-- menu Start -->
+        <nav class="menu" role="navigation" aria-label="About page">
+          <ul>
+            <li>
+              <a href="#">關於圖書館</a>
+              <ul>
+                <li><a href="#">第二層選單</a></li>
+                <li><a href="#">第二層選單</a></li>
+                <li><a href="#">第二層選單</a></li>
+                <li><a href="#">第二層選單</a></li>
+              </ul>
+            </li>
+            <li><a href="http://www.google.com">館藏查詢</a></li>
+            <li>
+              <a href="http://www.google.com">訊息公告</a>
+              <ul>
+                <li><a href="http://www.google.com">第二層有連結</a></li>
+                <li><a href="#">第二層選單</a></li>
+                <li><a href="#">第二層選單</a></li>
+                <li><a href="#">第二層選單</a></li>
+                <li><a href="#">第二層選單</a></li>
+                <li><a href="#">第二層選單</a></li>
+                <li><a href="#">第二層選單</a></li>
+                <li><a href="#">第二層選單</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">讀者服務</a>
+              <ul>
+                <li><a href="#">第二層選單</a></li>
+                <li><a href="#">第二層選單</a></li>
+                <li>
+                  <a href="http://www.google.com">第二層有連結</a>
+                  <ul>
+                    <li>
+                      <a href="http://www.google.com">第三層選單有下層</a>
+                      <ul>
+                        <li><a href="#">第四層選單</a></li>
+                        <li><a href="#">第四層選單</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="http://www.google.com">第三層選單有連結</a>
+                    </li>
+                    <li><a href="#">第三層選單</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">第二層選單</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">數位資源</a>
+              <ul>
+                <li><a href="#">第二層選單</a></li>
+                <li><a href="#">第二層選單</a></li>
+                <li><a href="#">第二層選單</a></li>
+                <li><a href="#">第二層選單</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">主題活動</a>
+              <ul>
+                <li><a href="#">第二層選單</a></li>
+                <li><a href="#">第二層選單</a></li>
+                <li><a href="#">第二層選單</a></li>
+                <li><a href="#">第二層選單</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <!-- menu End -->
+      </div>
+    </header>
+    <!-- header End -->
+    <!-- main Start -->
+    <div id="center" class="main innerpage">
+      <!-- 內頁新增一個classname-->
+      <a class="accesskey" href="#aC" id="aC" accesskey="C" title="主要內容區">:::</a>
+      <section class="col-12 full main_image_bg">
+        <div class="container">
+          <div class="img-container"></div>
+        </div>
+      </section>
+      <div class="container">
+        <!-- 主要內容區 -->
+        <div class="center_block">
+          <!-- breadcrumb路徑 -->
+          <div class="breadcrumb">
+            <ul>
+              <li><a href="#">首頁</a></li>
+              <li><a href="#">節點</a></li>
+              <li>節點</li>
+            </ul>
+          </div>
+          <!-- h2節點 -->
+          <h2 class="title">鄉立圖書館簡介</h2>
+          <!-- function功能區塊 -->
+          <section class="sp">
+            <!-- slider -->
+            <div class="container">
+              <div class="mpSlider">
+                <div class="img-container">
+                    <a href="#" title="">
+                        <picture>
+                            <source media="(min-width: 1200px)" data-lazy-srcset="images/img/banner_01.jpg">
+                            </source>
+                            <source media="(min-width: 992px)" data-lazy-srcset="images/img/banner_01.jpg">
+                            </source>
+                            <source media="(min-width: 576px)" data-lazy-srcset="images/img/banner_01.jpg">
+                            </source>
+                            <source media="(max-width: 575px)" data-lazy-srcset="images/img/banner_01.jpg">
+                            </source>
+                            <img data-lazy="images/img/banner_01.jpg" alt="banner1" class="cover">
+                            <noscript><img src="images/img/banner_01.jpg"></noscript>
+                        </picture>
+                    </a>
+                </div>
+                <div class="img-container">
+                    <a href="#" title="">
+                        <picture>
+                            <source media="(min-width: 1200px)" data-lazy-srcset="images/demo/01.jpg">
+                            </source>
+                            <source media="(min-width: 992px)" data-lazy-srcset="images/demo/01.jpg">
+                            </source>
+                            <source media="(min-width: 576px)" data-lazy-srcset="images/demo/01.jpg">
+                            </source>
+                            <source media="(max-width: 575px)" data-lazy-srcset="images/demo/01.jpg">
+                            </source>
+                            <img data-lazy="images/demo/01.jpg" alt="banner3" class="cover">
+                            <noscript><img src="images/demo/01.jpg"></noscript>
+                        </picture>
+                    </a>
+                </div>
+                <div class="img-container">
+                    <a href="#" title="">
+                        <picture>
+                            <source media="(min-width: 1200px)" data-lazy-srcset="images/demo/02.jpg">
+                            </source>
+                            <source media="(min-width: 992px)" data-lazy-srcset="images/demo/02.jpg">
+                            </source>
+                            <source media="(min-width: 576px)" data-lazy-srcset="images/demo/02.jpg">
+                            </source>
+                            <source media="(max-width: 575px)" data-lazy-srcset="images/demo/02.jpg">
+                            </source>
+                            <img data-lazy="images/demo/02.jpg" alt="banner3" class="cover">
+                            <noscript><img src="images/demo/02.jpg"></noscript>
+                        </picture>
+                    </a>
+                </div>
+            </div>
+            </div>
+            <!--最新消息-->
+            <section class="col-12 lp">
+              <div class="container">
+                <div class="col">
+                  <h3 class="title">湖口鄉立圖書館最新消息</h3>
+                  <div class="list">
+                    <ul>
+                      <li>
+                        <a href="#"><span class="num">1</span>即日起至108/9/31止,因RFID晶片建置中，圖書光碟附件暫停預約及跨館借閱服務。</a>
+                        <time>2018-03-09</time>
+                      </li>
+                      <li>
+                        <a href="#"><span class="num">2</span> 2019
+                          兒童戲劇巡演─就是那個光 II《 演出時間表》</a>
+                        <time>2018-03-09</time>
+                      </li>
+                      <li>
+                        <a href="#"><span class="num">3</span> 歡度父親節~
+                          讓爸爸們"爸氣登場"
+                        </a>
+                        <time>2018-03-09</time>
+                      </li>
+                      <li>
+                        <a href="#"><span class="num">4</span>2019
+                          兒童戲劇巡演─就是那個光 II《 演出時間表》</a>
+                        <time>2018-03-09</time>
+                      </li>
+                      <li>
+                        <a href="#"><span class="num">5</span> 歡度父親節~
+                          讓爸爸們"爸氣登場"
+                        </a>
+                        <time>2018-03-09</time>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <div class="col-8-4">
+              <div class="container">
+                <div class="Flex-set">
+                  <div class="col activitiesBlock">
+                    <div class="">
+                      <h2 class="text-left">近期活動</h2>
+                        <div class="activitiesList">
+                            <ul class="Content">
+                                <li><span class="township_tag">嘉義圖書館</span><time>2019-09-26</time><a
+                                        href="#">中秋節及國慶日休館公告：108/9/13(五)及10/10(四)休館</a></li>
+                                <li><span class="township_tag">嘉義圖書館</span><time>2019-09-26</time><a
+                                        href="#">科學探索玩一夏，開始招生囉!!!</a></li>
+                                <li><span class="township_tag">嘉義圖書館</span><time>2019-09-25</time><a
+                                        href="#">歡度父親節~ 讓爸爸們"爸氣登場"</a></li>
+                                <li><span class="township_tag">嘉義圖書館</span><time>2019-09-24</time><a
+                                        href="#">與書為友●夏學營 開始報名囉!!!!!</a></li>
+                                <li><span class="township_tag">嘉義圖書館</span><time>2019-09-23</time><a
+                                        href="#">適逢端午連假，本週六親子說故事活動暫停一次!適逢端午連假，本週六親子說故事活動暫停一次!</a></li>
+                            </ul>
+                            <div class="more"><a href="#">更多近期活動</a></div>
+                        </div>
+                    </div>
+                </div>
+                     <!-- 行事曆區塊 -->
+                     <div class="col calendarBlock  wow fadeInRight">
+                      <div class="calendar">
+                      </div>
+                      <div class="remark">
+                          <ul>
+                              <li class="close-day">休館日</li>
+                              <li class="act-day">活動日</li>
+                          </ul>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <section class="col-6-6 library_info">
+              <div class="container info_content">
+                <div class="Flex-set">
+                  <div class="col">
+                  <h3 class="title">分館資訊</h3>
+                  <h4 class="library_name">湖口鄉立圖書館</h4>
+                  <ul>
+                    <li class="info_address">963台東縣湖口鄉德輝路12號</li>
+                    <li class="info_email">service@hccc.gov.tw</li>
+                    <li class="info_phone"><span>服務台專線電話</span>03-8227121#506 或 #164</li>
+                    <li class="info_opening"><span>開館時間</span>星期二至星期日 09:00~21:00</li>
+                    <li class="info_closed"><span>休館日</span>星期一及國定假日</li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <ul>
+                    <li class="info_collection"><span>館藏數量</span>圖書：398765冊 、期刊：56種、DVD：2348部、CD：5682片、縮影資料：888片</li>
+                    <li class="info_space"><span>空間資訊</span>閱讀座位：348席 、 視聽座位：50席、討論室：3間、會議室：1間</li>
+                  </ul>
+                </div>
+                </div>
+                
+              </div>
+            </section>
+            <section class="col-12">
+              <div class="container">
+                <div class="Flex-set">
+                  <div class="col">
+                    <h3 class="title">分館簡介</h3>
+                    <div class="text_content">
+                      <p>
+                        關山鎮昔日為原住民之勢力範圍，而以阿美族人最多，清朝時代始有漢族移入開墾，並以農耕為主要產業；隨時代演進且於鎮公所努力下關山已逐漸轉型為現代化、公園化之觀光市鎮。全鎮總面積為58,735平方公里，共設有七個里，135鄰，總人口數約一萬一千餘人，鎮內有國小四所、國中一所、高職一所。</br>
+                        民國七十六年在，政府推展各鄉鎮普設圖書館計畫下，省政府與縣政府共同補助新台幣肆佰萬元，鎮公所提供三百餘坪公園土地興建，於民國七十八年九月十六日落成，由彭前鎮長盛煥邀前縣長鄭烈先生共同開幕啟用。關山鎮立圖書館之幽靜明朗的環境，提供了莘莘學子學習的好地方。</br>
+                        民國八十五年文建會補助本鎮新台幣壹仟貳佰館萬元，許前鎮長瑞貴分資新台幣肆佰萬元擴充二樓設備，整修展覽室及閱讀室並於民國八十六年五月啟用。</br>
+                        圖書館樓板面積總計約七○八平方公尺，室內提供各種藝品展覽、室外廣場面積約三、○○○平方公尺，內部一樓設服務台、資料室、期刊室、兒童圖書室、成人圖書室共珍藏各類圖書二萬餘冊；二樓設休息室、自修室、展演廳。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="col-12">
+              <div class="container">
+                <div class="Flex-set">
+                  <div class="col">
+                    <h3 class="title">館室服務（樓層簡介）</h3>
+                    <div class="text_content">
+                      <ul>
+                        <li><b>圖書室：</b>典藏各類人文、社會、科學等圖書，採開架方式供民眾閱覽並辦理外借。</li>
+                        <li><b>兒童室：</b>（兒童塗鴨區、親子共讀區）典藏適合各年齡層的兒童讀物供小朋友自由取閱，藉以啟示心智，擴充學習領域。以鄉村型原木設計，採開放式空間提供兒童一個舒適自在的閱讀環境。
+                        </li>
+                        <li><b>期刊室：</b>蒐集了各種類別的報章雜誌，在各方面均有多層面的探討和廣泛性的報導，民眾可由此獲得最新的資訊，掌握成功的先機。</li>
+                        <li><b>Ｋ書室：</b>座位寬敞舒適，在開闊的閱覽室內閱讀、頭腦清晰，讀書效果更是事半功倍，是青年學子自修的最佳去處。</li>
+                        <li><b>參考區：</b>典藏百科全書、字典及各類參考用工具書，供研究參考（不辦外借）並負責有關社會教育事宜之解答及資料影印服務、參考諮詢服務。</li>
+                        <li><b>視聽室：</b>定期播映各類紀錄片及社教藝文片，讓民眾欣賞與參考，提供視覺、聽覺至高無上的享受。</li>
+                        <li><b>展覽區：</b>提供社區藝文創作者一個展示成果的園地。</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="col-12">
+              <div class="container">
+                <div class="col">
+                  <h3 class="title">交通資訊</h3>
+                  <div class="text_content">
+                    <p>
+                      <b>自行開車</b></br>
+                      <b>北上：</b>高雄出發→屏東楓港→接台9線（南迴公路）→台東→花東公路→關山。</br>
+                      <b>南下：</b>台北出發→雪隧（國道5號）→宜蘭→蘇花公路接台9線經花蓮（花東公路）→玉里→池上→關山。</p>
+                  </div>
+                </div>
+
+              </div>
+
+            </section>
+          </section>
+        </div>
+      </div>
+      <!-- map -->
+      <section class="col-12 library_info_map">
+        <div class="full map">
+          <div class="container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.826886532418!2d120.24784105081213!3d23.466708105395682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e9c0a6007a6f1%3A0x6515792fe0f5080f!2z5ZiJ576p57ij56uL5ZyW5pu46aSo!5e0!3m2!1szh-TW!2stw!4v1635401414163!5m2!1szh-TW!2stw"
+              width="100%" height="450" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- fatfooter Start -->
+    <section class="fatfooter">
+      <div class="container">
+        <button type="button" name="展開選單/OPEN" aria-label="導覽選單展開/收合" class="btn btn-fatfooter">
+          收合
+        </button>
+        <nav>
+          <ul>
+            <li>
+              <a href="#">圖書館公告</a>
+              <ul>
+                <li><a href="#">公告</a></li>
+                <li><a href="#">活動訊息</a></li>
+                <li><a href="#">活動花絮</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">館舍簡介</a>
+              <ul>
+                <li><a href="#">緣起沿革</a></li>
+                <li><a href="#">組織業務</a></li>
+                <li><a href="#">本館大事紀</a></li>
+                <li><a href="#">業務統計</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">參觀導覽</a>
+              <ul>
+                <li><a href="#">開館時間</a></li>
+                <li><a href="#">聯絡資訊</a></li>
+                <li><a href="#">場地設施</a></li>
+                <li><a href="#">平面位置圖</a></li>
+                <li><a href="#">鄉鎮圖書館簡介</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">線上服務</a>
+              <ul>
+                <li><a href="#">服務介紹</a></li>
+                <li><a href="#">閱覽須知</a></li>
+                <li><a href="#">常見問答</a></li>
+                <li><a href="#">學生志工申請</a></li>
+                <li><a href="#">表單下載</a></li>
+                <li><a href="#">聯絡我們</a></li>
+                <li><a href="#">FAQ</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">故事志工</a>
+              <ul>
+                <li><a href="#">最新消息</a></li>
+                <li><a href="#">本隊介紹</a></li>
+                <li><a href="#">組織章程</a></li>
+                <li><a href="#">歷屆幹部</a></li>
+                <li><a href="#">活動花絮</a></li>
+                <li><a href="#">表單下載</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">最新消息</a>
+              <ul>
+                <li><a href="#">越越讀書日</a></li>
+                <li><a href="#">閱讀研習班</a></li>
+                <li><a href="#">好書教換日</a></li>
+                <li><a href="#">多元閱讀推廣活動</a></li>
+                <li><a href="#">鄉鎮圖書館活動</a></li>
+              </ul>
+            </li>
+            <!-- <li><a href="#">電子資源</a></li> -->
+          </ul>
+        </nav>
+      </div>
+    </section>
+    <!-- fatfooter End -->
+    <!-- footer Start-->
+    <footer>
+      <div class="container">
+        <a class="accesskey" href="#aZ" id="aZ" accesskey="Z" title="下方功能區塊">:::</a>
+        <section>
+          <div class="container">
+            <div class="adSlider">
+              <div class="img-container">
+                <a href="#" title="">
+                  <img data-lazy="images/demo/ad_01.jpg" class="contain" alt="圖片說明1" />
+                </a>
+              </div>
+              <div class="img-container">
+                <a href="#" title="">
+                  <img data-lazy="images/demo/ad_02.jpg" class="contain" alt="圖片說明2" />
+                </a>
+              </div>
+              <div class="img-container">
+                <a href="#" title="">
+                  <img data-lazy="images/demo/ad_03.jpg" class="contain" alt="圖片說明3" />
+                </a>
+              </div>
+              <div class="img-container">
+                <a href="#" title="">
+                  <img data-lazy="images/demo/ad_04.jpg" class="contain" alt="圖片說明4" />
+                </a>
+              </div>
+              <div class="img-container">
+                <a href="#" title="">
+                  <img data-lazy="images/demo/ad_05.jpg" class="contain" alt="圖片說明5" />
+                </a>
+              </div>
+              <div class="img-container">
+                <a href="#" title="">
+                  <img data-lazy="images/demo/ad_06.jpg" class="contain" alt="圖片說明6" />
+                </a>
+              </div>
+              <div class="img-container">
+                <a href="#" title="">
+                  <img data-lazy="images/demo/ad_07.jpg" class="cover" alt="圖片說明7" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="footer_info">
+          <div class="footer_logo"></div>
+          <p class="Copyright">
+            <b>嘉義縣圖書館</b><br />
+            地址 | 61351 嘉義縣朴子市山通路7號 <br />
+            電話 | (05)3799978 <br />
+            <span class="counter">今日瀏覽人次 | 11,205 本月瀏覽人次 | 310,654累計瀏覽人次 |
+              2,679,905
+            </span>
+            <span class="update">更新日期 | <em>2021/01/01</em></span> <br />
+            建議瀏覽器 |
+            IE10.0以上、Firefox、Chrome(螢幕設定最佳顯示效果為1280*1024)
+          </p>
+        </div>
+      </div>
+      <div class="container">
+        <div class="footer_bottom">
+          <ul class="footer_link">
+            <li><a href="javascript:;">隱私權政策</a></li>
+            <li><a href="javascript:;">資訊安全政策宣告 </a></li>
+            <li><a href="javascript:;">著作權聲明</a></li>
+          </ul>
+          <p class="copyright">
+            嘉義縣圖書館 版權所有 ©2021 All Rights Reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- footer End -->
+  </div>
+  <a href="javascript:;" class="scrollToTop">回頁首</a>
+  <!-- JQ -->
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <!-- 外掛 plugin js -->
+  <script src="vendor/jquery.easing.min.js"></script>
+  <!-- ease -->
+  <script src="vendor/slick/slick.min.js "></script>
+  <!-- slick -->
+  <script src="vendor/slick/slick-lightbox.js "></script>
+  <!-- slick lightbox -->
+  <script src="vendor/lazyload/lazyload.js"></script>
+  <!-- lazyload -->
+  <script src="vendor/picturefill/picturefill.min.js" async></script>
+  <!-- picturefill -->
+  <script src="vendor/scrolltable/jquery.scroltable.min.js"></script>
+  <!-- scrolltable -->
+  <!-- hyUI -->
+  <script src="js/hyui.js"></script>
+  <!-- 客製js -->
+  <script src="js/customize.js"></script>
+</body>
+
+</html>

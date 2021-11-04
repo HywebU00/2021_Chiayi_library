@@ -533,6 +533,9 @@ h2.title {
     margin-top: 1em;
 }
 
+.cp blockquote {
+    background: lighten($primaryColor, 45%);
+}
 .cp {
     .registration {
         .btn {
