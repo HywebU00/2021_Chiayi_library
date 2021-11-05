@@ -1593,6 +1593,9 @@ body {
     .lost_form {
         .btn.btn-submit {
             margin-left: 1.2em;
+            @include screen('mobile') {
+                margin-left: 0em;
+            }
         }
     }
 
