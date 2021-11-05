@@ -453,4 +453,18 @@
 }
 
 //新增專案
+.activities_list{
+    .thumbnail{
+        border-radius: 4px;
+    }
+    .thumbnail .caption .status{
+        background:#EFEBE6 ;
+        border-radius: 4px;
+    }
+}
 
+.lp{
+    table td a{
+        border-radius: 4px;
+    } 
+}

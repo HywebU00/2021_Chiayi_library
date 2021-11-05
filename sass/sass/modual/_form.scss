@@ -463,6 +463,7 @@ select::-ms-expand {
                 max-width: 100%;
             }
         }
+
         >input,
         >select,
         >label {
@@ -497,6 +498,7 @@ select::-ms-expand {
                 max-width: 100%;
             }
         }
+
         >input,
         >select,
         >label {
@@ -530,6 +532,7 @@ select::-ms-expand {
             //     width: 100%;
             // }
         }
+
         >input,
         >select,
         >label {
@@ -557,6 +560,7 @@ select::-ms-expand {
                 flex-basis: 100%;
                 max-width: 100%;
             }
+
             &:nth-child(2) {
                 width: 75%;
                 flex-basis: 75%;
@@ -569,6 +573,7 @@ select::-ms-expand {
                 }
             }
         }
+
         >input,
         >select,
         >label {
@@ -581,6 +586,7 @@ select::-ms-expand {
                 max-width: calc(25% - .6em);
                 flex-basis: calc(100% - .6em);
             }
+
             &:nth-child(2) {
                 width: calc(75% - .6em);
                 flex-basis: calc(75% - .6em);
@@ -593,7 +599,7 @@ select::-ms-expand {
                 }
             }
         }
-        
+
     }
 
     .form_col-9-3 {
@@ -608,6 +614,7 @@ select::-ms-expand {
                 max-width: 100%;
                 width: 100%;
             }
+
             &:nth-child(2) {
                 flex-basis: 25%;
                 max-width: 25%;
@@ -620,6 +627,7 @@ select::-ms-expand {
                 }
             }
         }
+
         >input,
         >select,
         >label {
@@ -628,7 +636,7 @@ select::-ms-expand {
             flex-basis: calc(75% - .6em);
 
             @include screen('xs_mobile') {
-                width:  calc(100% - .6em);
+                width: calc(100% - .6em);
                 max-width: calc(100% - .6em);
                 flex-basis: calc(100% - .6em);
             }
@@ -637,15 +645,15 @@ select::-ms-expand {
                 width: calc(25% - .6em);
                 max-width: calc(25% - .6em);
                 flex-basis: calc(25% - .6em);
-            
+
                 @include screen('xs_mobile') {
                     width: calc(100% - .6em);
                     max-width: calc(100% - .6em);
-                    flex-basis: calc(100% - .6em);           
+                    flex-basis: calc(100% - .6em);
                 }
             }
         }
-        
+
     }
 
     .form_col-3-3-6 {
@@ -660,6 +668,7 @@ select::-ms-expand {
                 flex-basis: 50%;
                 max-width: 50%;
             }
+
             &:last-child {
                 width: 50%;
                 flex-basis: 50%;
@@ -672,6 +681,7 @@ select::-ms-expand {
                 }
             }
         }
+
         >input,
         >select,
         >label {
@@ -684,6 +694,7 @@ select::-ms-expand {
                 max-width: calc(50% - .6em);
                 flex-basis: calc(50% - .6em);
             }
+
             &:last-child {
                 width: calc(50% - .6em);
                 max-width: calc(50% - .6em);
@@ -733,9 +744,9 @@ select::-ms-expand {
 
     .form_col-4-8 {
 
-        >.form_grp{
-            width:  calc(100% / 3);
-            max-width:  calc(100% / 3);
+        >.form_grp {
+            width: calc(100% / 3);
+            max-width: calc(100% / 3);
             flex-basis: calc(100% / 3);
 
             @include screen('xs_mobile') {
@@ -743,6 +754,7 @@ select::-ms-expand {
                 max-width: 50%;
                 flex-basis: 50%;
             }
+
             &:last-child {
                 width: calc(100% / 3 * 2);
                 max-width: calc(100% / 3 * 2);
@@ -768,6 +780,7 @@ select::-ms-expand {
                 max-width: calc(100% - .6em);
                 flex-basis: calc(100% - .6em);
             }
+
             &:last-child {
                 width: calc(100% / 3 * 2 - .6em);
                 max-width: calc(100% / 3 * 2 - .6em);
@@ -785,15 +798,16 @@ select::-ms-expand {
     .form_col-2-10 {
 
         >.form_grp {
-            width:  calc(100% / 6);
+            width: calc(100% / 6);
             max-width: calc(100% / 6);
             flex-basis: calc(100% / 6);
 
             @include screen('xs_mobile') {
                 width: 100%;
-                max-width: 100%; 
+                max-width: 100%;
                 flex-basis: 100%;
             }
+
             &:last-child {
                 max-width: calc(100% / 12 * 10);
                 flex-basis: calc(100% / 12 * 10);
@@ -809,24 +823,25 @@ select::-ms-expand {
 
         >input,
         >select,
-        >label {  
+        >label {
             width: calc(100% / 12 * 2 - .6em);
-            max-width:calc(100% / 12 * 2 - .6em);
+            max-width: calc(100% / 12 * 2 - .6em);
             flex-basis: calc(100% / 12 * 2 - .6em);
 
             @include screen('xs_mobile') {
                 width: calc(100% - .6em);
-                max-width:calc(100% - .6em);
+                max-width: calc(100% - .6em);
                 flex-basis: calc(100% - .6em);
             }
+
             &:last-child {
                 width: calc(100% / 12 * 10 - .6em);
-                max-width:calc(100% / 12 * 10 - .6em);
+                max-width: calc(100% / 12 * 10 - .6em);
                 flex-basis: calc(100% / 12 * 10 - .6em);
 
                 @include screen('xs_mobile') {
-                    width:calc(100% - .6em);
-                    max-width:calc(100% - .6em);
+                    width: calc(100% - .6em);
+                    max-width: calc(100% - .6em);
                     flex-basis: calc(100% - .6em);
                 }
             }
@@ -835,24 +850,25 @@ select::-ms-expand {
 
     .form_col-10-2 {
 
-        >.form_grp{
+        >.form_grp {
             width: calc(100% / 6);
-            max-width:calc(100% / 6);
+            max-width: calc(100% / 6);
             flex-basis: calc(100% / 6);
 
             @include screen('xs_mobile') {
                 width: 100%;
-                max-width:100%;
+                max-width: 100%;
                 flex-basis: 100%;
             }
+
             &:first-child {
                 width: calc(100% / 12 * 10);
-                max-width:calc(100% / 12 * 10);
+                max-width: calc(100% / 12 * 10);
                 flex-basis: calc(100% / 12 * 10);
 
                 @include screen('xs_mobile') {
                     width: 100%;
-                    max-width:100%;
+                    max-width: 100%;
                     flex-basis: 100%;
                 }
             }
@@ -862,22 +878,23 @@ select::-ms-expand {
         >select,
         >label {
             width: calc(100% / 12 * 2 - .6em);
-            max-width:calc(100% / 12 * 2 - .6em);
+            max-width: calc(100% / 12 * 2 - .6em);
             flex-basis: calc(100% / 12 * 2 - .6em);
 
             @include screen('xs_mobile') {
                 width: calc(100% - .6em);
-                max-width:calc(100% - .6em);
+                max-width: calc(100% - .6em);
                 flex-basis: calc(100% - .6em);
             }
+
             &:first-child {
                 width: calc(100% / 12 * 10 - .6em);
-                max-width:calc(100% / 12 * 10 - .6em);
+                max-width: calc(100% / 12 * 10 - .6em);
                 flex-basis: calc(100% / 12 * 10 - .6em);
 
                 @include screen('xs_mobile') {
                     width: calc(100% - .6em);
-                    max-width:calc(100% - .6em);
+                    max-width: calc(100% - .6em);
                     flex-basis: calc(100% - .6em);
                 }
             }
@@ -888,22 +905,23 @@ select::-ms-expand {
 
         >.form_grp {
             width: calc(100% / 12 * 2);
-            max-width:calc(100% / 12 * 2);
+            max-width: calc(100% / 12 * 2);
             flex-basis: calc(100% / 12 * 2);
 
             @include screen('xs_mobile') {
                 width: 50%;
-                max-width:50%;
+                max-width: 50%;
                 flex-basis: 50%;
             }
+
             &:last-child {
                 width: calc(100% / 12 * 8);
-                max-width:calc(100% / 12 * 8);
+                max-width: calc(100% / 12 * 8);
                 flex-basis: calc(100% / 12 * 8);
 
                 @include screen('xs_mobile') {
                     width: 100%;
-                    max-width:100%;
+                    max-width: 100%;
                     flex-basis: 100%;
                 }
             }
@@ -913,22 +931,23 @@ select::-ms-expand {
         >select,
         >label {
             width: calc(100% / 12 * 2 - .6em);
-            max-width:calc(100% / 12 * 2 - .6em);
+            max-width: calc(100% / 12 * 2 - .6em);
             flex-basis: calc(100% / 12 * 2 - .6em);
 
             @include screen('xs_mobile') {
-                width:  calc(50% - .6em);
+                width: calc(50% - .6em);
                 max-width: calc(50% - .6em);
                 flex-basis: calc(50% - .6em);
             }
+
             &:last-child {
-                width:  calc(100% / 12 * 8 - .6em);
+                width: calc(100% / 12 * 8 - .6em);
                 max-width: calc(100% / 12 * 8 - .6em);
                 flex-basis: calc(100% / 12 * 8 - .6em);
 
                 @include screen('xs_mobile') {
                     width: calc(100% - .6em);
-                    max-width:calc(100% - .6em);
+                    max-width: calc(100% - .6em);
                     flex-basis: calc(100% - .6em);
                 }
             }
@@ -937,23 +956,24 @@ select::-ms-expand {
 
     .form_col-8-2-2 {
 
-        >.form_grp{
+        >.form_grp {
             width: calc(100% / 12 * 2);
-            max-width:calc(100% / 12 * 2);
+            max-width: calc(100% / 12 * 2);
             flex-basis: calc(100% / 12 * 2);
 
             @include screen('xs_mobile') {
                 width: 50%;
-                max-width:50%;
+                max-width: 50%;
                 flex-basis: 50%;
             }
+
             &:first-child {
-                width:  calc(100% / 12 * 8);
+                width: calc(100% / 12 * 8);
                 max-width: calc(100% / 12 * 8);
                 flex-basis: calc(100% / 12 * 8);
 
                 @include screen('xs_mobile') {
-                    width:  100%;
+                    width: 100%;
                     max-width: 100%;
                     flex-basis: 100%;
                 }
@@ -974,7 +994,7 @@ select::-ms-expand {
             }
 
             &:first-child {
-                width:  calc(100% / 12 * 8 - .6em);
+                width: calc(100% / 12 * 8 - .6em);
                 max-width: calc(100% / 12 * 8 - .6em);
                 flex-basis: calc(100% / 12 * 8 - .6em);
 
@@ -1506,4 +1526,27 @@ abbr[title] {
 .search_grp {
     padding: 1em;
 
+}
+
+//專案新增
+
+.lp{
+    .search_grp.flex-form {
+        .form_content {
+            padding-left: 8px;
+            @include screen("mobile") {
+                padding-left: 0px;
+        }
+
+    }
+    .form_grp.form_inline{
+        input[type="submit"]{
+            color: #fff;
+            background: $primaryColor;
+            &:hover,&:active{
+                background: $secondaryColor;
+            }
+        }
+    }
+    }
 }
