@@ -298,7 +298,7 @@
                 width: 100%;
                 justify-content: center;
                 flex-wrap: wrap;
-
+                overflow: hidden;
                 &:hover {
                     background: $primaryColor;
                     border-radius: 4px;
@@ -308,36 +308,17 @@
                     span {
                         color: white;
                     }
-
-                    .service_icon_search {
-                        background: url(../images/img/icon_search_w.svg) center no-repeat;
-                        background-size: 40px;
+                    img{
+                        display: none;
                     }
-
-                    .service_icon_fb {
-                        background: url(../images/img/icon_fb_w.svg) center no-repeat;
-                        background-size: 40px;
+                    .pic img.hover_img{
+                        display: block;
                     }
+                    // .pic img {
+                    //     left: -100px;
+                    //     filter: drop-shadow(#ffffff 100px 0);
+                    // }
 
-                    .service_icon_info {
-                        background: url(../images/img/icon_globe_w.svg) center no-repeat;
-                        background-size: 40px;
-                    }
-
-                    .service_icon_reader {
-                        background: url(../images/img/icon_chat_w.svg) center no-repeat;
-                        background-size: 40px;
-                    }
-
-                    .service_icon_q {
-                        background: url(../images/img/icon_questionnaire_w.svg) center no-repeat;
-                        background-size: 40px;
-                    }
-
-                    .service_icon_online {
-                        background: url(../images/img/icon_calendar_w.svg) center no-repeat;
-                        background-size: 40px;
-                    }
                 }
 
                 div {
@@ -353,7 +334,14 @@
 
                 img {
                     width: 40px;
+                    // position: relative;
+                    // left: 0;
+                    // margin-bottom: .1rem;
                 }
+                img.hover_img{
+                display: none;
+                }
+
             }
 
             a>span {
@@ -364,35 +352,7 @@
         }
     }
 
-    .service_icon_search {
-        background: url(../images/img/icon_search.svg) center no-repeat;
-        background-size: 40px;
-    }
 
-    .service_icon_fb {
-        background: url(../images/img/icon_fb.svg) center no-repeat;
-        background-size: 40px;
-    }
-
-    .service_icon_info {
-        background: url(../images/img/icon_globe.svg) center no-repeat;
-        background-size: 40px;
-    }
-
-    .service_icon_reader {
-        background: url(../images/img/icon_chat.svg) center no-repeat;
-        background-size: 40px;
-    }
-
-    .service_icon_q {
-        background: url(../images/img/icon_questionnaire.svg) center no-repeat;
-        background-size: 40px;
-    }
-
-    .service_icon_online {
-        background: url(../images/img/icon_calendar.svg) center no-repeat;
-        background-size: 40px;
-    }
 }
 
 .select_library {
@@ -537,14 +497,17 @@
 .mp .library_info {
     padding: 0;
     background-color: unset;
-ul{
-    height: auto;
-}
+
+    ul {
+        height: auto;
+    }
+
     li {
         width: 100%;
     }
 }
-.mp > .library_info_map{
+
+.mp>.library_info_map {
     padding: 0;
     height: 450px;
 }
@@ -603,6 +566,7 @@ ul{
 }
 
 .mp .calendarBlock {
+
     // width: 326px;
     // height: ;
     @include screen('mobile') {
@@ -815,7 +779,7 @@ ul{
 
     position: absolute;
     // top: -35px;
-        // left: -150px;
+    // left: -150px;
     width: 300px;
     height: 155px;
     top: -260px;
@@ -853,6 +817,7 @@ ul{
     height: 97px;
     z-index: 10;
     background: url(../images/img/bk_03.png) no-repeat center;
+
     @media screen and (max-width: 1200px) {
         display: none;
     }
@@ -868,6 +833,7 @@ ul{
     height: 97px;
     z-index: 10;
     background: url(../images/img/bk_04.png) no-repeat center;
+
     @media screen and (max-width: 1200px) {
         display: none;
     }
@@ -881,9 +847,10 @@ ul{
     // right: -110px;
     top: 860px;
     right: 2000px;
-  
+
     z-index: 10;
     background: url(../images/img/bk_05.png) no-repeat center;
+
     @media screen and (max-width: 1200px) {
         display: none;
     }
