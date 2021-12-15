@@ -1,0 +1,17 @@
+.lp{
+    .btn_list{
+        display: flex;
+    }
+    .select_library{
+        top:0;
+        margin-top: 0.9em;
+        display: block;
+    position: relative;
+    label{
+        height: 0;
+    }
+    select{
+        margin: 0;
+    }
+}
+}
