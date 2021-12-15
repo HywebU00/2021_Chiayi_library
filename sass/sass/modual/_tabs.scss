@@ -70,10 +70,15 @@
         text-decoration: none;
         @include text-overflow;
         box-sizing: border-box;
-
+a{
+    color:#000;
+}
         &:hover,
         &:focus {
             background: $primaryColor;
+            a{
+                color: #fff;
+            }
         }
 
         @include screen('mobile') {
@@ -242,3 +247,13 @@
         
     }
 }
+
+
+
+
+
+//樣式新增
+.tabs>.tabItem.active a {
+    color: #fff;
+ }
+ 
