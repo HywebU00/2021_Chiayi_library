@@ -1,14 +1,27 @@
 .lp{
     .btn_list{
         display: flex;
+        @include screen('mobile') {
+            display: block;
+
+        }
     }
     .select_library{
         top:0;
         margin-top: 0.9em;
-        display: block;
+    display: flex;
     position: relative;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: fit-content;
+    @include screen('mobile') {
+        justify-content: flex-start;
+
+    }
     label{
-        height: 0;
+        font-size: 1em;
+        white-space: nowrap;
+
     }
     select{
         margin: 0;
