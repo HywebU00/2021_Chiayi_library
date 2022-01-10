@@ -1,4 +1,7 @@
 .lp{
+    .fancybox-infobar{
+        font-size:0.8em ;
+    }
     .btn_list{
         display: flex;
         @include screen('mobile') {
