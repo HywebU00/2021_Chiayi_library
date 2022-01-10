@@ -49,5 +49,14 @@
         @include aspect-ratio(5, 2);
     }
 }
-
-
+//tab 樣式修改
+#newsAll10{
+ ul{
+    li{
+        display: flex;
+        a{ 
+            margin-right: auto;
+        }
+    } 
+ }  
+}
