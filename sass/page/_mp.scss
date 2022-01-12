@@ -50,13 +50,16 @@
     }
 }
 //tab 樣式修改
-#newsAll10{
+.tabContent{
  ul{
     li{
         display: flex;
         a{ 
             margin-right: auto;
-        }
+            max-width: 60%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;}
         time{
             margin-right: 0em; 
         }
