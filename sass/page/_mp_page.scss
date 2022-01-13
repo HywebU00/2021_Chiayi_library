@@ -460,6 +460,7 @@
                 }
                 @include screen('mobile') {
                     flex-wrap: wrap;
+                    line-height: normal;
                 }
                 time {
                     font-size: .813em;
