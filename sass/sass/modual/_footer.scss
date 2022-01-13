@@ -201,6 +201,7 @@ footer {
         }
          @include screen('xs_mobile') {
             margin-top:1em;
+            background-size: contain;
             // margin-bottom: 0em;
         }
     }
