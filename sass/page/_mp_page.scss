@@ -455,11 +455,12 @@
                 text-overflow: ellipsis;
                 display: flex;
                 border-bottom: 1px solid #ccc;
-
                 &:last-child {
                     border: none;
                 }
-
+                @include screen('mobile') {
+                    flex-wrap: wrap;
+                }
                 time {
                     font-size: .813em;
                     color: #666;
@@ -467,16 +468,23 @@
                 }
                 span{
                     margin: 0 1em;
+                    @include screen('mobile') {
+                       margin-left: 0;
+                    }
                 }
                 a {
                     color: #000;
                     width: 60%;
-                 
+                   
                     overflow: hidden;
                     white-space: nowrap;
                     text-overflow: ellipsis;
                     &:hover {
                         color: $primaryColor;
+                    }
+                    @include screen('mobile') {
+                        width: 100%;
+                        max-width: unset;
                     }
                 }
             }

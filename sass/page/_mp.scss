@@ -54,15 +54,30 @@
  ul{
     li{
         display: flex;
+        @include screen('mobile') {
+            flex-wrap: wrap;
+        }
+    }
+    
         a{ 
             margin-right: auto;
             max-width: 60%;
             white-space: nowrap;
             overflow: hidden;
-            text-overflow: ellipsis;}
+            text-overflow: ellipsis;
+            @include screen('mobile') {
+                width: 100%;
+                max-width: unset;
+                margin-bottom: 0.5em;
+            }
+        }
         time{
             margin-right: 0em; 
+            @include screen('mobile') {
+                margin:0;
+            }
         }
+       
     } 
  }  
-}
+

@@ -177,6 +177,9 @@ a{
         li {
             .township_tag{
                 font-weight: 500;
+                @include screen('mobile') {
+                    margin-right:0.5em;
+                }
             }
             // padding: 0 0.5em 0.9em;
             // line-height: 1.6em;
@@ -191,6 +194,9 @@ a{
             }
             time {
                 margin: 0 2em;
+                @include screen('mobile') {
+                    margin:0;
+                }
             }
         }
     }
