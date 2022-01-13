@@ -453,7 +453,7 @@
                 overflow: hidden;
                 white-space: nowrap;
                 text-overflow: ellipsis;
-
+                display: flex;
                 border-bottom: 1px solid #ccc;
 
                 &:last-child {
@@ -461,12 +461,20 @@
                 }
 
                 time {
-                    margin: 0 2em;
+                    font-size: .813em;
+                    color: #666;
+                    margin-right: 0;
                 }
-
+                span{
+                    margin: 0 1em;
+                }
                 a {
                     color: #000;
-
+                    width: 60%;
+                 
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
                     &:hover {
                         color: $primaryColor;
                     }
