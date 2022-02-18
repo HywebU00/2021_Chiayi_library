@@ -76,6 +76,7 @@ a{
         &:hover,
         &:focus {
             background: $primaryColor;
+
             a{
                 color: #fff;
             }
@@ -222,10 +223,16 @@ a{
     &:hover {
         background-color: darken($primaryColor, 20%);
     }
+    &:focus{
+        border: 1px solid red;
+    }
 }
 
 .tabs>.tabItem.active {
     border: 1px solid $primaryColor;
+    &:focus{
+        border: 1px solid red;
+    }
 }
 
 .bookSlider_tabs.tabs{

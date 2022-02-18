@@ -272,7 +272,7 @@
         margin-left: -40px !important;
 
         &:focus {
-            box-shadow: 0 0px 0px 2px #14e6d8 !important;
+            box-shadow: 0 0px 0px 2px red !important;
             border-radius: 4px;
         }
     }
@@ -370,6 +370,9 @@
         box-shadow: 0px 2px 4px 0px #ccc;
         border: 0;
         width: 160px;
+        &:focus{
+            border: 2px solid $primaryColor;
+          }
     }
 
     @include screen('mobile') {
