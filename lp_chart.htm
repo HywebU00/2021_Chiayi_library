@@ -49,6 +49,16 @@
                 <li><a href="#">兒童版</a></li>
                 <li><a href="#">常見問題</a></li>
               </ul>
+              <!-- 文字大小 -->
+              <div class="font_size">
+                <span>字型大小：</span>
+                <!-- 英文用<span>font-size：</span> -->
+                <ul>
+                  <li><a href="#" class="small">小</a></li>
+                  <li><a href="#" class="medium">中</a></li>
+                  <li><a href="#" class="large">大</a></li>
+                </ul>
+              </div>
             </div>
             <!-- 讀者專區 樣式一 -->
             <!-- 未登入狀態的登入btn -->
@@ -503,54 +513,54 @@
     <script src="vendor/highcharts/code/modules/exporting.js"></script>
     <script src="vendor/highcharts/code/modules/export-data.js"></script>
     <script>
-      Highcharts.chart("container0", {
+      Highcharts.chart('container0', {
         title: {
-          text: "讀者辦證數量(張)",
+          text: '讀者辦證數量(張)',
           style: {
-            fontSize: "2em",
+            fontSize: '2em',
           },
         },
 
         subtitle: {
-          text: "每月統計",
+          text: '每月統計',
           style: {
-            fontSize: "1.2em",
+            fontSize: '1.2em',
           },
         },
 
         yAxis: {
           title: {
-            text: "張數",
+            text: '張數',
             fontSize: 13,
           },
           plotLines: [
             {
               value: 0,
               width: 1,
-              color: "#808080",
+              color: '#808080',
             },
           ],
         },
         xAxis: {
           categories: [
-            "2019/1",
-            "2019/2",
-            "2019/3",
-            "2019/4",
-            "2019/5",
-            "2019/6",
-            "2019/7",
-            "2019/8",
-            "2019/9",
-            "2019/10",
-            "2019/11",
-            "2019/12",
+            '2019/1',
+            '2019/2',
+            '2019/3',
+            '2019/4',
+            '2019/5',
+            '2019/6',
+            '2019/7',
+            '2019/8',
+            '2019/9',
+            '2019/10',
+            '2019/11',
+            '2019/12',
           ],
         },
         legend: {
-          layout: "vertical",
-          align: "right",
-          verticalAlign: "middle",
+          layout: 'vertical',
+          align: 'right',
+          verticalAlign: 'middle',
           borderWidth: 0,
         },
 
@@ -564,9 +574,9 @@
 
         series: [
           {
-            name: "張數",
+            name: '張數',
             data: [634, 653, 777, 968, 701, 1031, 933, 575, 596, 814, 1324],
-            color: "#6a60d6",
+            color: '#6a60d6',
           },
         ],
 
@@ -578,9 +588,9 @@
               },
               chartOptions: {
                 legend: {
-                  layout: "horizontal",
-                  align: "center",
-                  verticalAlign: "bottom",
+                  layout: 'horizontal',
+                  align: 'center',
+                  verticalAlign: 'bottom',
                 },
               },
             },
@@ -589,54 +599,54 @@
       });
     </script>
     <script>
-      Highcharts.chart("container1", {
+      Highcharts.chart('container1', {
         title: {
-          text: "館藏數量(冊)",
+          text: '館藏數量(冊)',
           style: {
-            fontSize: "2em",
+            fontSize: '2em',
           },
         },
 
         subtitle: {
-          text: "每月統計",
+          text: '每月統計',
           style: {
-            fontSize: "1.2em",
+            fontSize: '1.2em',
           },
         },
 
         yAxis: {
           title: {
-            text: "冊次",
+            text: '冊次',
             fontSize: 13,
           },
           plotLines: [
             {
               value: 0,
               width: 1,
-              color: "#808080",
+              color: '#808080',
             },
           ],
         },
         xAxis: {
           categories: [
-            "2019/1",
-            "2019/2",
-            "2019/3",
-            "2019/4",
-            "2019/5",
-            "2019/6",
-            "2019/7",
-            "2019/8",
-            "2019/9",
-            "2019/10",
-            "2019/11",
-            "2019/12",
+            '2019/1',
+            '2019/2',
+            '2019/3',
+            '2019/4',
+            '2019/5',
+            '2019/6',
+            '2019/7',
+            '2019/8',
+            '2019/9',
+            '2019/10',
+            '2019/11',
+            '2019/12',
           ],
         },
         legend: {
-          layout: "vertical",
-          align: "right",
-          verticalAlign: "middle",
+          layout: 'vertical',
+          align: 'right',
+          verticalAlign: 'middle',
           borderWidth: 0,
         },
 
@@ -650,12 +660,12 @@
 
         series: [
           {
-            name: "冊次",
+            name: '冊次',
             data: [
               4334, 6503, 5777, 8968, 9701, 11931, 13733, 14175, 9596, 8194,
               13224,
             ],
-            color: "#6a60d6",
+            color: '#6a60d6',
           },
         ],
 
@@ -667,9 +677,9 @@
               },
               chartOptions: {
                 legend: {
-                  layout: "horizontal",
-                  align: "center",
-                  verticalAlign: "bottom",
+                  layout: 'horizontal',
+                  align: 'center',
+                  verticalAlign: 'bottom',
                 },
               },
             },
@@ -678,54 +688,54 @@
       });
     </script>
     <script>
-      Highcharts.chart("container2", {
+      Highcharts.chart('container2', {
         title: {
-          text: "借閱數量(冊)",
+          text: '借閱數量(冊)',
           style: {
-            fontSize: "2em",
+            fontSize: '2em',
           },
         },
 
         subtitle: {
-          text: "每月統計",
+          text: '每月統計',
           style: {
-            fontSize: "1.2em",
+            fontSize: '1.2em',
           },
         },
 
         yAxis: {
           title: {
-            text: "冊次",
+            text: '冊次',
             fontSize: 13,
           },
           plotLines: [
             {
               value: 0,
               width: 1,
-              color: "#808080",
+              color: '#808080',
             },
           ],
         },
         xAxis: {
           categories: [
-            "2019/1",
-            "2019/2",
-            "2019/3",
-            "2019/4",
-            "2019/5",
-            "2019/6",
-            "2019/7",
-            "2019/8",
-            "2019/9",
-            "2019/10",
-            "2019/11",
-            "2019/12",
+            '2019/1',
+            '2019/2',
+            '2019/3',
+            '2019/4',
+            '2019/5',
+            '2019/6',
+            '2019/7',
+            '2019/8',
+            '2019/9',
+            '2019/10',
+            '2019/11',
+            '2019/12',
           ],
         },
         legend: {
-          layout: "vertical",
-          align: "right",
-          verticalAlign: "middle",
+          layout: 'vertical',
+          align: 'right',
+          verticalAlign: 'middle',
           borderWidth: 0,
         },
 
@@ -739,12 +749,12 @@
 
         series: [
           {
-            name: "冊次",
+            name: '冊次',
             data: [
               4334, 6503, 5777, 8968, 9701, 11931, 13733, 14175, 9596, 8194,
               13224,
             ],
-            color: "#6a60d6",
+            color: '#6a60d6',
           },
         ],
 
@@ -756,9 +766,9 @@
               },
               chartOptions: {
                 legend: {
-                  layout: "horizontal",
-                  align: "center",
-                  verticalAlign: "bottom",
+                  layout: 'horizontal',
+                  align: 'center',
+                  verticalAlign: 'bottom',
                 },
               },
             },

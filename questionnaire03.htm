@@ -49,6 +49,16 @@
                 <li><a href="#">兒童版</a></li>
                 <li><a href="#">常見問題</a></li>
               </ul>
+              <!-- 文字大小 -->
+              <div class="font_size">
+                <span>字型大小：</span>
+                <!-- 英文用<span>font-size：</span> -->
+                <ul>
+                  <li><a href="#" class="small">小</a></li>
+                  <li><a href="#" class="medium">中</a></li>
+                  <li><a href="#" class="large">大</a></li>
+                </ul>
+              </div>
             </div>
             <!-- 讀者專區 樣式一 -->
             <!-- 未登入狀態的登入btn -->
@@ -501,23 +511,23 @@
     <script src="js/customize.js"></script>
     <script>
       // Build the chart
-      Highcharts.chart("container0", {
+      Highcharts.chart('container0', {
         chart: {
           plotBackgroundColor: null,
           plotBorderWidth: null,
           plotShadow: false,
-          type: "pie",
+          type: 'pie',
         },
         title: {
-          text: "",
+          text: '',
         },
         tooltip: {
-          pointFormat: "{series.name}: <b>{point.percentage:.1f}%</b>",
+          pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>',
         },
         plotOptions: {
           pie: {
             allowPointSelect: true,
-            cursor: "pointer",
+            cursor: 'pointer',
             dataLabels: {
               enabled: false,
             },
@@ -526,17 +536,17 @@
         },
         series: [
           {
-            name: "性別",
+            name: '性別',
             colorByPoint: true,
             data: [
               {
-                name: "男",
+                name: '男',
                 y: 100,
                 sliced: true,
                 selected: true,
               },
               {
-                name: "女",
+                name: '女',
                 y: 200,
               },
             ],
@@ -544,23 +554,23 @@
         ],
       });
       // Build the chart
-      Highcharts.chart("container1", {
+      Highcharts.chart('container1', {
         chart: {
           plotBackgroundColor: null,
           plotBorderWidth: null,
           plotShadow: false,
-          type: "pie",
+          type: 'pie',
         },
         title: {
-          text: "",
+          text: '',
         },
         tooltip: {
-          pointFormat: "{series.name}: <b>{point.percentage:.1f}%</b>",
+          pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>',
         },
         plotOptions: {
           pie: {
             allowPointSelect: true,
-            cursor: "pointer",
+            cursor: 'pointer',
             dataLabels: {
               enabled: false,
             },
@@ -569,60 +579,60 @@
         },
         series: [
           {
-            name: "年齡",
+            name: '年齡',
             colorByPoint: true,
             data: [
               {
-                name: "12歲以下",
+                name: '12歲以下',
                 y: 20,
                 sliced: true,
                 selected: true,
               },
               {
-                name: "13-19歲",
+                name: '13-19歲',
                 y: 30,
               },
               {
-                name: "20-29歲",
+                name: '20-29歲',
                 y: 30,
               },
               {
-                name: "30-39歲",
+                name: '30-39歲',
                 y: 40,
               },
               {
-                name: "40-49歲",
+                name: '40-49歲',
                 y: 50,
               },
               {
-                name: "50-59歲",
+                name: '50-59歲',
                 y: 30,
               },
               {
-                name: "60歲以上",
+                name: '60歲以上',
                 y: 20,
               },
             ],
           },
         ],
       });
-      Highcharts.chart("container2", {
+      Highcharts.chart('container2', {
         chart: {
-          type: "bar",
+          type: 'bar',
         },
         title: {
-          text: "",
+          text: '',
         },
         xAxis: {
           categories: [
-            "借/還圖書、期刊",
-            "借/還視聽資料",
-            "看書報、雜誌",
-            "查找資料",
-            "自修",
-            "參加活動/展覽",
-            "使用電腦上網",
-            "其他",
+            '借/還圖書、期刊',
+            '借/還視聽資料',
+            '看書報、雜誌',
+            '查找資料',
+            '自修',
+            '參加活動/展覽',
+            '使用電腦上網',
+            '其他',
           ],
           title: {
             text: null,
@@ -631,15 +641,15 @@
         yAxis: {
           min: 0,
           title: {
-            text: "",
-            align: "high",
+            text: '',
+            align: 'high',
           },
           labels: {
-            overflow: "justify",
+            overflow: 'justify',
           },
         },
         tooltip: {
-          valueSuffix: " millions",
+          valueSuffix: ' millions',
         },
         plotOptions: {
           bar: {
@@ -649,15 +659,15 @@
           },
         },
         legend: {
-          layout: "vertical",
-          align: "right",
-          verticalAlign: "top",
+          layout: 'vertical',
+          align: 'right',
+          verticalAlign: 'top',
           x: -40,
           y: 80,
           floating: true,
           borderWidth: 1,
           backgroundColor:
-            Highcharts.defaultOptions.legend.backgroundColor || "#FFFFFF",
+            Highcharts.defaultOptions.legend.backgroundColor || '#FFFFFF',
           shadow: true,
         },
         credits: {
@@ -665,7 +675,7 @@
         },
         series: [
           {
-            name: "人數",
+            name: '人數',
             data: [80, 75, 94, 65, 34, 13, 27, 10],
           },
         ],

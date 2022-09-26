@@ -49,6 +49,16 @@
                 <li><a href="#">兒童版</a></li>
                 <li><a href="#">常見問題</a></li>
               </ul>
+              <!-- 文字大小 -->
+              <div class="font_size">
+                <span>字型大小：</span>
+                <!-- 英文用<span>font-size：</span> -->
+                <ul>
+                  <li><a href="#" class="small">小</a></li>
+                  <li><a href="#" class="medium">中</a></li>
+                  <li><a href="#" class="large">大</a></li>
+                </ul>
+              </div>
             </div>
             <!-- 讀者專區 樣式一 -->
             <!-- 未登入狀態的登入btn -->
@@ -332,26 +342,26 @@
                     //if (document.readyState != 'complete')
                     //    return google.setOnLoadCallback(gcseCallback, true);
                     google.search.cse.element.render({
-                      gname: "gsearch",
-                      div: "gsresult",
-                      tag: "search",
-                      attributes: { as_sitesearch: "" },
+                      gname: 'gsearch',
+                      div: 'gsresult',
+                      tag: 'search',
+                      attributes: { as_sitesearch: '' },
                     });
                     var element =
-                      google.search.cse.element.getElement("gsearch");
-                    element.execute("法官");
+                      google.search.cse.element.getElement('gsearch');
+                    element.execute('法官');
                   }
                   window.__gcse = {
-                    parsetags: "explicit",
+                    parsetags: 'explicit',
                     callback: gcseCallback,
                   };
                   (function () {
-                    var cx = "bbfb6b718fa6fa6f6";
-                    var gcse = document.createElement("script");
-                    gcse.type = "text/javascript";
+                    var cx = 'bbfb6b718fa6fa6f6';
+                    var gcse = document.createElement('script');
+                    gcse.type = 'text/javascript';
                     gcse.async = true;
-                    gcse.src = "https://cse.google.com/cse.js?cx=" + cx;
-                    var s = document.getElementsByTagName("script")[0];
+                    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                    var s = document.getElementsByTagName('script')[0];
                     s.parentNode.insertBefore(gcse, s);
                   })();
                 </script>
